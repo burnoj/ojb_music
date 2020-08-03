@@ -21,7 +21,7 @@
 }
 
 .home-banner-img {
-  height: 100vh;
+  height: 110vh;
   background-position: center;
   background-size: cover;
 }
@@ -36,6 +36,15 @@
   text-align: center;
 }
 
+.logo {
+  background: image-url('logo');
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20%;
+}
+
 .white-line {
   height: 0.2em;
   margin: 10% 0;
@@ -43,6 +52,13 @@
   background: image-url('white_line');
   background-position: center;
   background-size: cover;
+}
+
+.home-btn {
+  border: 1px solid white;
+  color: white;
+  margin-top: 20%;
+  margin-bottom: 15%;
 }
 
 @media screen and (min-width: 800px) {
