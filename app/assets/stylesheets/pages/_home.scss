@@ -27,6 +27,7 @@
 }
 
 .home-banner-content {
+  order: -1;
   height: 110vh;
   color: white;
   background: #1E1E1E;
@@ -67,5 +68,9 @@
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 30% 1fr;
+  }
+
+  .home-banner-content {
+    order: 0;
   }
 }
