@@ -1,14 +1,24 @@
-<div>
-  <h1>Pages#home</h1>
-  <p>Find me in app/views/pages/home.html.erb</p>
+<div class="home-container">
+  <div class="home-banner-container">
+    <div class="home-banner-img img-1"></div>
+    <div>
+      <div class="logo"></div>
+      <h1>MUSIC PRODUCER</h1>
+      <div>LINE</div>
+      <p>Multi-instrumentalist, cross genre production.</p>
+      <button>READ MORE</button>
+      <i class="fas fa-angle-down fa-2x"></i>
+    </div>
+    <div class="home-banner-img img-2"></div>
+  </div>
 </div>
 
-<%= audio_tag("hotel_c.wav", controls: true) %>
-<%= audio_tag("the_streets.wav", controls: true) %>
-<%= audio_tag("liquid.wav", controls: true) %>
-<%= audio_tag("harmonys_dub.wav", controls: true) %>
-<%= audio_tag("puppeteer.wav", controls: true) %>
-<%= audio_tag("give_it.wav", controls: true) %>
-<%= audio_tag("aspire.wav", controls: true) %>
-<%= audio_tag("before_the_storm.wav", controls: true) %>
+<%= audio_tag("hotel_c.wav", controls: true, preload: "none") %>
+<%= audio_tag("the_streets.wav", controls: true, preload: "none") %>
+<%= audio_tag("liquid.wav", controls: true, preload: "none") %>
+<%= audio_tag("harmonys_dub.wav", controls: true, preload: "none") %>
+<%= audio_tag("puppeteer.wav", controls: true, preload: "none") %>
+<%= audio_tag("give_it.wav", controls: true, preload: "none") %>
+<%= audio_tag("aspire.wav", controls: true, preload: "none") %>
+<%= audio_tag("before_the_storm.wav", controls: true, preload: "none") %>
 
