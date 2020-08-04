@@ -15,8 +15,12 @@ $headers-font: "Roboto", "Helvetica", "sans-serif";
 // }
 // $my-font: "Font Name";
 
+body {
+  background: white !important;
+}
+
 div {
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 h1 {
@@ -24,7 +28,26 @@ h1 {
   letter-spacing: 0.15em;
 }
 
+h2 {
+  font-size: 2em !important;
+  letter-spacing: 0.15em;
+}
+
+h3 {
+  font-size: 1.2em !important;
+  letter-spacing: 0.15em;
+}
+
 p {
   font-size: 12px !important;
   letter-spacing: 0.15em;
+}
+
+.center {
+  text-align: center;
+}
+
+.light-text {
+  font-weight: lighter;
+  opacity: 0.5;
 }

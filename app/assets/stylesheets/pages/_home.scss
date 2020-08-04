@@ -2,9 +2,11 @@
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-rows: auto 100vh auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto 120vh auto auto auto auto auto auto auto auto;
   grid-template-columns: 1fr;
 }
+
+// ------------------- HOME BANNER ------------------- //
 
 .home-banner-container {
   display: grid;
@@ -63,7 +65,135 @@
   margin-bottom: 15%;
 }
 
-@media screen and (min-width: 800px) {
+
+
+// ------------------- NOX BANNER ------------------- //
+
+.nox-banner-container {
+  display: flex;
+  align-items: center;
+  // background: #F5F5F5;
+}
+
+.nox-banner {
+  padding: 20vh 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), image-url('nox-background');
+  background-position: center;
+  background-size: cover;
+}
+
+.nox-banner-content {
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// ------------------- TUNES ------------------- //
+.tunes-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tune-container {
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  // background: #F5F5F5;
+}
+
+.tune-img-1 {
+  background: image-url('harmonys-dub');
+}
+
+.tune-img-2 {
+  background: image-url('puppeteer-img');
+}
+
+.tune-img-3 {
+  background: image-url('aspire-img');
+}
+
+.tune-img-4 {
+  background: image-url('harmonys-dub');
+}
+
+.tune-img-5 {
+  background: image-url('harmonys-dub');
+}
+
+.tune-img-6 {
+  background: image-url('harmonys-dub');
+}
+
+.tune-img-7 {
+  background: image-url('harmonys-dub');
+}
+
+.tune-img-8 {
+  background: image-url('harmonys-dub');
+}
+
+.tune-img {
+  // width: 100%;
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.order-2 {
+  order: 2;
+}
+
+
+
+.tune-content {
+  height: 100vh;
+  padding: 2em 0;
+  background: white;
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #F5F5F5;
+  // align-items: center;
+}
+
+.tune-title {
+
+}
+
+.tune-content-info {
+  padding-left: 3em;
+  padding-bottom: 3em;
+}
+
+.tune-caption {
+  font-size: 1.2em !important;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.tune-audio-clip {
+  padding-bottom: 5em;
+}
+
+.tune-soundcloud-link {
+}
+
+// ------------------- MEDIA QUERIES ------------------- //
+
+
+@media screen and (min-width: 600px) {
+
   .home-banner-container {
     display: grid;
     grid-template-rows: auto;
@@ -73,4 +203,43 @@
   .home-banner-content {
     order: 0;
   }
+
+  .tune-img-border {
+  height: 100vh;
+  width: 65vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F5F5F5;
 }
+
+  .tune-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .order-2 {
+    order: -1;
+  }
+
+  .tune-img {
+    width: 92%;
+    height: 90%;
+  }
+
+  .tune-content {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .tune-container {
+    width: 90%;
+    // background: #F5F5F5;
+  }
+
+  .tune-content {
+    width: 35%;
+  }
+}
+
