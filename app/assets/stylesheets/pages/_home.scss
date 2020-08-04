@@ -123,23 +123,23 @@
 }
 
 .tune-img-4 {
-  background: image-url('harmonys-dub');
+  background: image-url('streets-img-2');
 }
 
 .tune-img-5 {
-  background: image-url('harmonys-dub');
+  background: image-url('before_the_storm-img');
 }
 
 .tune-img-6 {
-  background: image-url('harmonys-dub');
+  background: image-url('hotel-cal-img');
 }
 
 .tune-img-7 {
-  background: image-url('harmonys-dub');
+  background: image-url('give-it-img');
 }
 
 .tune-img-8 {
-  background: image-url('harmonys-dub');
+  background: image-url('flow-img');
 }
 
 .tune-img {
@@ -163,17 +163,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   border: 1px solid #F5F5F5;
   // align-items: center;
 }
 
-.tune-title {
-
-}
-
 .tune-content-info {
-  padding-left: 3em;
   padding-bottom: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .tune-caption {
@@ -229,6 +228,7 @@
 
   .tune-content {
     width: 50%;
+    padding: 0 2em;
   }
 }
 
