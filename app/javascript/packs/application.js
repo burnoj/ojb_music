@@ -22,6 +22,38 @@ require("channels")
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
 
+function smoothScroll () {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+    });
+  });
+}
+
+let elements = document.querySelectorAll('.hidden');
+let windowHeight = window.innerHeight;
+
+function checkPosition () {
+  for (let i = 0; i < elements.length; i++) {
+    const element = elements[i];
+    console.log(elements)
+    const positionFromTop = elements[i].getBoundingClientRect().top;
+
+    if (positionFromTop - windowHeight <= 0) {
+      element.classList.add('fade-in-element');
+      element.classList.remove('hidden');
+    }
+  }
+}
+
+window.addEventListener('scroll', checkPosition);
+
+
+
 // External imports
 import "bootstrap";
 
@@ -29,6 +61,8 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
+  smoothScroll();
+  checkPosition();
   // Call your functions here, e.g:
   // initSelect2();
 });

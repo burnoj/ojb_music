@@ -1,4 +1,4 @@
-<div class="home-container">
+<div class="home-container hidden">
 
 <!-- //------------------- HOME BANNER ------------------- // -->
 
@@ -9,8 +9,8 @@
       <h1>MUSIC PRODUCER</h1>
       <div class="white-line"></div>
       <p>Multi-instrumentalist, cross genre production.</p>
-      <button class="btn home-btn">READ MORE</button>
-      <div><i class="fas fa-angle-down fa-lg"></i></div>
+      <a href="#nox-link"><button class="home-btn">READ MORE</button></a>
+      <a href="#nox-link"><i class="fas fa-angle-down fa-lg arrow-icon"></i></a>
     </div>
     <div class="home-banner-img img-2"></div>
   </div>
@@ -18,12 +18,11 @@
 <!-- //------------------- NOX BANNER ------------------- // -->
 
   <div class="nox-banner-container">
-    <div class="nox-banner">
+    <div class="nox-banner" id="nox-link">
       <div class="nox-banner-content">
         <h3>Introducing..</h2>
-        <h2>NOX</h2>
-        <p>An experimental project spanning a variety of electronic genres and instruments</p>
-        <p>Paired with images and a caption to encourage thought </p>
+        <h2 class="nox-title">NOX</h2>
+        <p class="nox-description">An experimental project combining a variety of electronic genres and instruments, paired with images and brief contextual snippets to provide a fuller experience.</p>
       </div>
     </div>
   </div>
@@ -35,9 +34,9 @@
       <div class="tune-content order-2">
         <div class="tune-content-info">
           <h2 class="tune-title">HARMONY'S DUB</h2>
-          <div>
-          <h3 class="light-text" style="padding-bottom: 0.1em;">Genre: N/A</h3>
-          <h3 class="light-text">Where: Brighton</h3>
+          <div class="tune-description">
+            <h3 class="light-text" style="padding-bottom: 0.1em;">Genre: N/A</h3>
+            <h3 class="light-text">Made in: Brighton</h3>
           </div>
         </div>
         <p class="tune-caption center">Emotional Daze</p>
@@ -57,7 +56,7 @@
         <div class="tune-content-info">
           <h2 class="tune-title">PUPPETEER</h2>
           <h3 class="light-text" style="padding-bottom: 0.1em;">Genre: Techno/House</h3>
-          <h3 class="light-text">Where: Brighton</h3>
+          <h3 class="light-text">Made in: Brighton</h3>
         </div>
         <p class="tune-caption center">Hedonistic Treasure</p>
         <div class="tune-audio-clip center"><%= audio_tag("puppeteer.wav", controls: true, preload: "none") %></div>
@@ -70,7 +69,7 @@
         <div class="tune-content-info">
           <h2 class="tune-title">ASPIRE</h2>
           <h3 class="light-text" style="padding-bottom: 0.1em;">Genre: Chill</h3>
-          <h3 class="light-text">Where: Brighton</h3>
+          <h3 class="light-text">Made in: Brighton</h3>
         </div>
         <p class="tune-caption center">Warming Meditation</p>
         <div class="tune-audio-clip center"><%= audio_tag("aspire.wav", controls: true, preload: "none") %></div>
@@ -89,7 +88,7 @@
         <div class="tune-content-info">
           <h2 class="tune-title">STREETS</h2>
           <h3 class="light-text" style="padding-bottom: 0.1em;">Genre: Hip-Hop</h3>
-          <h3 class="light-text">Where: Brighton</h3>
+          <h3 class="light-text">Made in: Brighton</h3>
         </div>
         <p class="tune-caption center">The Underground</p>
         <div class="tune-audio-clip center"><%= audio_tag("the_streets.wav", controls: true, preload: "none") %></div>
@@ -102,7 +101,7 @@
         <div class="tune-content-info">
           <h2 class="tune-title">BEFORE THE STORM</h2>
           <h3 class="light-text" style="padding-bottom: 0.1em;">Genre: Cinematic</h3>
-          <h3 class="light-text">Where: Melbourne</h3>
+          <h3 class="light-text">Made in: Melbourne</h3>
         </div>
         <p class="tune-caption center">Momentary Reflection</p>
         <div class="tune-audio-clip center"><%= audio_tag("before_the_storm.wav", controls: true, preload: "none") %></div>
@@ -121,7 +120,7 @@
         <div class="tune-content-info">
           <h2 class="tune-title">HOTEL CALIFORNIA (REWORK)</h2>
           <h3 class="light-text" style="padding-bottom: 0.1em;">Genre: House</h3>
-          <h3 class="light-text">Where: Little Chalfont</h3>
+          <h3 class="light-text">Made in: Little Chalfont</h3>
         </div>
         <p class="tune-caption center">Subtly Haunted</p>
         <div class="tune-audio-clip center"><%= audio_tag("hotel_c.wav", controls: true, preload: "none") %></div>
@@ -134,7 +133,7 @@
         <div class="tune-content-info">
           <h2 class="tune-title">GIVE IT</h2>
           <h3 class="light-text" style="padding-bottom: 0.1em;">Genre: Drum & Bass</h3>
-          <h3 class="light-text">Where: UPTON</h3>
+          <h3 class="light-text">Made in: UPTON</h3>
         </div>
         <p class="tune-caption center">Desired Frenzy</p>
         <div class="tune-audio-clip center"><%= audio_tag("give_it.wav", controls: true, preload: "none") %></div>
@@ -153,7 +152,7 @@
         <div class="tune-content-info">
           <h2 class="tune-title">FLOW</h2>
           <h3 class="light-text" style="padding-bottom: 0.1em;">Genre: Liquid Drum & Bass</h3>
-          <h3 class="light-text">Where: Melbourne</h3>
+          <h3 class="light-text">Made in: Melbourne</h3>
         </div>
         <p class="tune-caption center">Peaceful Focus</p>
         <div class="tune-audio-clip center"><%= audio_tag("liquid.wav", controls: true, preload: "none") %></div>

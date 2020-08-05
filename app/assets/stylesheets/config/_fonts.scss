@@ -20,7 +20,7 @@ body {
 }
 
 div {
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 h1 {
@@ -43,6 +43,15 @@ p {
   letter-spacing: 0.15em;
 }
 
+a {
+  letter-spacing: 0.15em;
+  color: white !important;
+}
+
+audio:focus {
+  outline: none !important;
+}
+
 .center {
   text-align: center;
 }
@@ -50,4 +59,19 @@ p {
 .light-text {
   font-weight: lighter;
   opacity: 0.5;
+}
+
+// Fade in on Scroll //
+
+@keyframes fade-in {
+    from {opacity: 0.8;}
+    to {opacity: 1;}
+}
+
+.fade-in-element {
+  animation: fade-in 2s;
+}
+
+.hidden {
+  opacity: 0;
 }
