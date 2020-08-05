@@ -106,7 +106,7 @@
   padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
-  width: 90%;
+  // width: 90%;
   // background: #F5F5F5;
 }
 
@@ -153,8 +153,6 @@
   order: 2;
 }
 
-
-
 .tune-content {
   height: 100vh;
   padding: 2em 0;
@@ -185,9 +183,6 @@
   padding-bottom: 5em;
 }
 
-.tune-soundcloud-link {
-}
-
 // ------------------- MEDIA QUERIES ------------------- //
 
 
@@ -205,7 +200,7 @@
 
   .tune-img-border {
   height: 100vh;
-  width: 65vw;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,6 +231,10 @@
   .tune-container {
     width: 90%;
     // background: #F5F5F5;
+  }
+
+  .tune-img-border {
+    width: 65%
   }
 
   .tune-content {
