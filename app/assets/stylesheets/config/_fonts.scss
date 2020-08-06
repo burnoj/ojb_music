@@ -43,9 +43,14 @@ p {
   letter-spacing: 0.15em;
 }
 
-a {
-  letter-spacing: 0.15em;
-  color: black !important;
+i:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
 }
 
 audio:focus {
