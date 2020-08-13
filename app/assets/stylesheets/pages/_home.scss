@@ -191,7 +191,6 @@
 
 .tune-content {
   height: 100vh;
-  padding: 2em 1em;
   background: white;
   // text-align: center;
   display: flex;
@@ -304,7 +303,7 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   .tune-container {
     width: 90%;
     // background: #F5F5F5;
